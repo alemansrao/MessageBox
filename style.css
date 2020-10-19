@@ -1,0 +1,82 @@
+.MessageBox{
+	transition: margin 0.6s;
+	font-size: 8em;
+	color: rgb(204, 201, 201);
+	margin-top: 7%;
+	margin-bottom: 30px;
+	font-family: monospace;
+	
+}
+.btn-primary:active{
+	
+		background-color: #3e8e41;
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	
+}
+
+#buttons{
+	margin: 10px 0;
+}
+
+img{
+	visibility: hidden;
+}
+
+label{
+	color: white;
+}
+
+#exampleInput,#nameBox{
+	width: 40%;
+	border-radius: 40px;
+}
+
+#footer{
+	position:absolute;
+   bottom:0;
+   opacity: 1;
+   width:100%;
+   height:30px;   /* Height of the footer */
+   background:rgb(185, 185, 185);
+   transition: opacity 0.4s;
+   z-index: 10000000;
+}
+
+input{
+	display: inline;
+}
+
+.btn-primary{
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 430px) {
+	.MessageBox{
+	font-size: 48px;
+	color: rgb(204, 201, 201);
+	margin-top: 40%;
+	margin-bottom: 0;
+	font-family: monospace;
+	overflow: hidden;
+	}
+	#exampleInput,#nameBox{
+	width: 65%;
+}
+}
+
+@media screen and (max-height: 520px) {
+	.MessageBox{
+		transition: margin 0.6s;
+		margin-top: 0;
+		font-size: 4em;
+	}
+}
+
+@media screen and (max-height: 600px) {
+	#footer{
+		transition: opacity 0.4s;
+		/* opacity: 0; */
+		opacity: 0;
+	}
+}

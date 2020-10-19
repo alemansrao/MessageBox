@@ -1,0 +1,60 @@
+body,
+		html {
+			height: 100%;
+			margin: 0;
+		}
+
+		#footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 30px;
+			/* Height of the footer */
+			background: rgb(185, 185, 185);
+			transition: opacity 0.4s;
+			z-index: 10000000;
+		}
+		img[alt="www.000webhost.com"]
+		{
+		    display: none;
+		}
+
+		.baba {
+			width: 80%;
+			margin: auto;
+
+		}
+
+		.bgimg {
+			position: relative;
+			/* opacity: 0.65; */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.bgimg {
+			background-image: url("bg.jpg");
+			height: 100%;
+		}
+
+		.btn-primary:active {
+			background-color: #3e8e41;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+		}
+
+		@media screen and (max-width: 540px) {
+			.bgimg {
+				background-image: url("bgmob.jpg");
+				height: 100%;
+				padding-top: 20px;
+			}
+		}
+
+		@media screen and (max-width:360px) {
+			h1 {
+
+				font-size: 35px;
+			}
+		}
